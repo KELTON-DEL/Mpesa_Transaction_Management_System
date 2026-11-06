@@ -1,0 +1,128 @@
+body {
+   background-color: #f4f7f6;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+
+.form-container{
+ 
+   width: 100%;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.logo {
+  width: 300px;
+  height: 50px;
+  margin: 0 auto 15px auto;
+  border-radius: 10px;
+  padding: 5px;
+  
+}
+
+.input-f {
+  width:40%;
+  padding: 10px;
+  border-radius:5px;
+  margin: 2% auto;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 40%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #0c8835;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #0aa552;
+  width: 50%;
+}
+.feedback {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e6f7e6;
+  color: #2e7d32;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Success */
+.feedback.success {
+  background-color: #e6f7e6;
+  color: #2e7d32;
+}
+
+/* Error */
+.feedback.error {
+  background-color: #fdecea;
+  color: #c62828;
+}
+.devcont{
+  color:rgb(47, 3, 89);
+  background:linear-gradient(to right,aqua,rgb(19, 31, 140));
+  padding: 5px;
+  width: 200px;
+  margin: auto;
+}
+
+
+@media (max-width: 768px) {
+  .table-con {
+    overflow-x: auto;        
+}}
+.profile{
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right,#e6f7e6,rgb(1, 123, 123));
+}
+
+
+/* Base styling for the feedback container */
+.feedback {
+  margin: auto;
+  margin-top: 15px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 70%;
+}
+
+
+.feedback.error {
+  background-color: #ffe6e6; 
+  color: #d9534f;            
+  border: 1px solid #ffcccc;  
+}
+
+
+.feedback.success {
+  background-color: #e6fffa; 
+  color: #2e7d32;           
+  border: 1px solid #b2f5ea; 
+}
+
+
+.feedback.info {
+  background-color: #e8f4fd; 
+  color: #1976d2;           
+  border: 1px solid #bbdefb;
+}

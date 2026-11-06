@@ -1,0 +1,181 @@
+
+.recent-transactions {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  margin-top: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Payment overview */
+
+.payment-overview {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.overview-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.overview-heading h3,
+.recent-heading h3 {
+  color: #087443;
+  margin: 0 0 6px;
+}
+
+.overview-heading p,
+.recent-heading p {
+  color: #777;
+  font-size: 13px;
+  margin: 0;
+}
+
+.overview-total {
+  text-align: right;
+}
+
+.overview-total span {
+  color: #777;
+  font-size: 12px;
+}
+
+.overview-total h2 {
+  color: #087443;
+  margin: 5px 0;
+  font-size: 21px;
+}
+
+/* Bar chart */
+
+.payment-chart {
+  height: 190px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 15px;
+  margin-top: 25px;
+  padding: 0 10px;
+}
+
+.chart-column {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.chart-amount {
+  color: #087443;
+  font-size: 11px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.chart-bar-wrapper {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.chart-bar {
+  width: 35px;
+  max-width: 80%;
+  background: linear-gradient(180deg, #00b45a, #087443);
+  border-radius: 6px 6px 0 0;
+  transition: height 0.4s ease;
+}
+
+.chart-day {
+  color: #666;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* Recent transactions heading */
+
+.recent-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0 15px;
+}
+
+.view-all {
+  color: #087443;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}
+
+/* Transactions table */
+
+.recent-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.recent-table-container table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+
+.recent-table-container th,
+.recent-table-container td {
+  padding: 13px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.recent-table-container th {
+  background: #087443;
+  color: white;
+}
+
+.success-status {
+  color: #087443;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 600px) {
+  .recent-transactions {
+    padding: 14px;
+  }
+
+  .payment-chart {
+    gap: 5px;
+  }
+
+  .chart-amount {
+    font-size: 9px;
+  }
+
+  .chart-bar {
+    width: 22px;
+  }
+}
