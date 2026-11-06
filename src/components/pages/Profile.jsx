@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./Profile.css";
 import Sidebar from "./Sidebar";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://mpesa-trunsuction-management-system.onrender.com";
 
 export default function Profile() {
   const [profile, setProfile] = useState({

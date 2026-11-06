@@ -18,8 +18,8 @@ function Login() {
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
-
-  const API_URL = "http://localhost:3000";
+  
+const API_URL = "https://mpesa-trunsuction-management-system.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
